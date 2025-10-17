@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HANLURE · Cognitive Allure | 智美未来</title>
+  <meta name="description" content="Hanlure — When Intelligence Meets Aesthetics. 智能与美的融合 · AI 美学品牌概念页。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="HANLURE · Cognitive Allure">
+  <meta property="og:description" content="When Intelligence Meets Aesthetics · 智能与美的融合">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hanlure.com/">
+  <meta name="theme-color" content="#0b0f1a">
+  <style>
+    :root{
+      --bg1:#0b0f1a;
+      --bg2:#061a2e;
+      --neon:#1ec8ff;
+      --neon2:#8a7dff;
+      --text:#e9f1ff;
+      --muted:#a9b6c7;
+      --accent:#1ec8ff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, "PingFang SC","Noto Sans CJK","Helvetica Neue",Arial,sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 70% 20%, #0c2645 0%, transparent 60%),
+                  radial-gradient(800px 400px at 20% 80%, #1a113a 0%, transparent 60%),
+                  linear-gradient(160deg, var(--bg1), var(--bg2));
+      overflow-x:hidden;
+    }
+    /* animated grid glow */
+    .glow{
+      position:fixed; inset:0; pointer-events:none; z-index:0;
+      background:
+        repeating-linear-gradient(90deg, rgba(30,200,255,.05) 0 1px, transparent 1px 60px),
+        repeating-linear-gradient(0deg, rgba(138,125,255,.05) 0 1px, transparent 1px 60px);
+      mix-blend-mode:screen;
+      animation: drift 30s linear infinite;
+    }
+    @keyframes drift{
+      0%{transform:translate3d(0,0,0)}
+      100%{transform:translate3d(-60px,-60px,0)}
+    }
+    .container{
+      position:relative; z-index:1;
+      max-width:980px; margin:0 auto; padding:64px 20px 48px;
+      display:flex; flex-direction:column; align-items:center; text-align:center;
+    }
+    .logo{
+      display:inline-flex; align-items:center; gap:12px;
+      padding:10px 16px; border-radius:999px;
+      background: rgba(14,24,40,.4); backdrop-filter: blur(6px);
+      border:1px solid rgba(30,200,255,.25);
+      box-shadow: 0 0 30px rgba(30,200,255,.15), inset 0 0 20px rgba(138,125,255,.08);
+      letter-spacing:.08em;
+    }
+    .logo span{
+      font-weight:800; font-size:20px; background:linear-gradient(90deg,var(--neon),var(--neon2));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    h1{
+      margin:26px 0 8px; font-size:clamp(32px,6vw,56px);
+      line-height:1.05; font-weight:800;
+      background:linear-gradient(90deg,#e9f1ff,#caf0ff);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow: 0 0 18px rgba(30,200,255,.18);
+    }
+    .tagline{
+      margin:0 0 14px; color:var(--muted); font-size:clamp(16px,2.6vw,20px);
+    }
+    .tagline b{color:#fff; font-weight:700}
+    .cn{opacity:.9}
+    .card{
+      margin-top:28px;
+      background: rgba(14,24,40,.5);
+      border:1px solid rgba(202,240,255,.18);
+      box-shadow: 0 10px 60px rgba(0,0,0,.35), inset 0 0 40px rgba(30,200,255,.06);
+      border-radius:20px;
+      padding:22px 22px;
+      text-align:left; color:#dbe7f6;
+    }
+    .card h2{margin:2px 0 10px; font-size:20px; color:#eaf6ff}
+    .card p{margin:8px 0; line-height:1.8; color:#c6d5e6}
+    .grid{display:grid; gap:14px; grid-template-columns:1fr; margin-top:10px}
+    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+    .cta{
+      margin:26px 0 0; display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+    }
+    a.btn, button.btn{
+      text-decoration:none; color:#00141d; font-weight:800; letter-spacing:.02em;
+      padding:12px 16px; border-radius:12px; border:0; cursor:pointer;
+      background: linear-gradient(90deg, #7ee0ff, #9ea1ff);
+      box-shadow: 0 10px 26px rgba(30,200,255,.25);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    a.btn:hover{ transform: translateY(-1px); box-shadow: 0 16px 30px rgba(30,200,255,.32); }
+    .subbtn{
+      color:#cfeaff; background:rgba(30,200,255,.08); border:1px solid rgba(30,200,255,.22);
+    }
+    footer{
+      margin:42px auto 26px; text-align:center; color:#96a6ba; font-size:14px;
+      max-width:980px; padding:0 20px;
+    }
+    footer small{display:block; margin-top:8px; color:#7f93a9}
+    .divider{height:1px; width:100%; background:linear-gradient(90deg, transparent, rgba(174,214,255,.24), transparent); margin:28px 0;}
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <main class="container">
+    <div class="logo"><span>HANLURE</span> · Cognitive Allure</div>
+    <h1>When Intelligence Meets Aesthetics</h1>
+    <p class="tagline">Hanlure — <b>智美融合</b> · The modern expression of <b>allure</b> in the age of AI.</p>
+    <p class="tagline cn">汉魅 · 当智能遇见审美，科技以美感触达人心。</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Concept · 概念</h2>
+        <p>HANLURE 代表一种将 <b>智能（Intelligence）</b> 与 <b>魅力（Allure）</b> 融合的品牌理念：更人性、更审美、更具未来感。</p>
+        <p>We explore how intelligence can shape aesthetics — turning data, light and motion into emotionally resonant experiences.</p>
+      </article>
+      <article class="card">
+        <h2>Use Cases · 方向</h2>
+        <p>AI 视觉与交互 · 高端品牌设计 · 智慧空间 · 生成式内容系统 · 实验性数字体验。</p>
+        <p>AI visuals & UX · Brand systems · Smart spaces · Generative content · Experimental digital art.</p>
+      </article>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="mailto:xu456xu@gmail.com">Contact · 邮件联系</a>
+      <a class="btn subbtn" href="#" onclick="alert('Thanks for visiting HANLURE!'); return false;">Explore</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+      © HANLURE.com · Cognitive Allure
+      <small>本网站与任何现存科技公司（包括但不限于小米公司及其关联企业）无任何关联或合作关系，仅为个人创意与展示用途。<br>
+      This website has no affiliation with any existing tech company (including but not limited to Xiaomi or its affiliates). For creative and showcase purposes only.</small>
+    </footer>
+  </main>
+</body>
+</html>
